@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/core/data/hotel_list.dart';
-import 'package:myapp/core/models/hotel.dart';
-import 'package:myapp/components/hotel_navbar.dart';
-import 'package:myapp/components/hotel_carousel.dart';
-import 'package:myapp/components/hotel_list.dart';
+import 'package:GoTravel/core/data/hotel_list.dart';
+import 'package:GoTravel/core/models/hotel.dart';
+import 'package:GoTravel/components/hotel_navbar.dart';
+import 'package:GoTravel/components/hotel_carousel.dart';
+import 'package:GoTravel/components/hotel_list.dart';
 
 class HotelPage extends StatefulWidget {
   const HotelPage({super.key});

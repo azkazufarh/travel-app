@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:myapp/components/hotel_carousel.dart';
-import 'package:myapp/core/models/hotel.dart';
+import 'package:GoTravel/components/hotel_carousel.dart';
+import 'package:GoTravel/core/models/hotel.dart';
 
 class HotelDetailPage extends StatelessWidget {
   final Hotel hotel;
@@ -92,9 +92,17 @@ class HotelDetailPage extends StatelessWidget {
                       _highlightIcon(Icons.favorite, 'Romantic'),
                     ],
                   ),
-
+                  SizedBox(height: 10),
+                  Text(
+                    '📰 Description',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    hotel.description,
+                    style: TextStyle(fontSize: 14, color: Colors.grey),
+                  ),
                   SizedBox(height: 20),
-
                   // 3️⃣ Reviews Section (Placeholder)
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -181,7 +189,7 @@ class HotelDetailPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Image.network(
-                      'https://static.vecteezy.com/system/resources/previews/000/153/588/non_2x/vector-roadmap-location-map.jpg',
+                      'https://t4.ftcdn.net/jpg/02/65/42/55/360_F_265425516_wtAw64cGdOVvrdl64b5bsyBqcD0rkw1W.jpg',
                       fit: BoxFit.cover,
                       errorBuilder:
                           (context, error, stackTrace) =>

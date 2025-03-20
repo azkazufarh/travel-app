@@ -4,9 +4,9 @@ class HotelNavbar extends StatelessWidget {
   final ValueChanged<String> onSearch;
 
   const HotelNavbar({
-    Key? key,
+    super.key,
     required this.onSearch,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

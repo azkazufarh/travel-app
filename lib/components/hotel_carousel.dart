@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class HotelCarousel extends StatefulWidget {
   final List<String> images;
 
-  const HotelCarousel({Key? key, required this.images}) : super(key: key);
+  const HotelCarousel({super.key, required this.images});
 
   @override
   _HotelCarouselState createState() => _HotelCarouselState();
